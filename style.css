@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+}
+
+#LogoBox {
+	height: 80%;
+	width: 25%;
+	min-width: 260px;
+	max-width: 350px;
+	float: left;
+	margin: auto;
+}
+
+#Logo {
+	width: 100%;
+	height: auto;
+	display: block;
+
+}
+
+#InnerBody {
+	width: 80vw;
+	min-width: 600px;
+	margin: auto;
+}
+
+#Header {
+	height: 15vh;
+	min-height: 150px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+	padding: 30px 20px;
+	background-color: blue;
+	margin: auto;
+}
+
+#NavigationBox {
+    	margin: 20px auto;
+	width: 100%;
+    	position: relative;
+}
+
+#ContentBox {
+	background-color: pink;
+	height: 1300px;
+	width: 100%;
+}
+
+
+#SideBar {
+	width: 300px;
+	height: 100%;
+	background-color: green;
+	transition: 0.5s
+}
+
+#Footer {
+	height: 20vh;
+	width: 100%;
+	background-color: yellow;
+}
+	
+ul {
+  	margin: 0 2%;
+  	padding: 0;
+	float: left;
+}
+
+li {
+  	display: inline;
+	float: left;
+	background-color: gray;
+	
+
+}
+
+li a {
+  	display: block;
+  	color: white;
+  	text-align: center;
+	font-size: 2.9vw;
+  	padding: 14px 2vw;
+  	text-decoration: none;
+}
+
+li a:hover {
+  	background-color: #111;
+	transition: 0.3s;
+	
+}
+
+.dropbtn {
+	display: block;
+  	text-align: center;
+	font-size: 30px;
+  	padding: 14px 2vw;
+  	border: none;
+	min-width: 160px;
+  	
+}
+
+.dropdown {
+  	position: relative;
+  	display: none;
+
+  	left: 30vw;
+  	
+}
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	min-width: 160px;
+  	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
