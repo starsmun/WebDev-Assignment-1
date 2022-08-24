@@ -17,7 +17,7 @@ function mobileCheck() {
 			$('#SideBar').css("width", "50px");
 		}
 		
-
+		$('.sidebutton').css("display", "block");
 		$('.dropdown').css("display", "inline-block");
 		
 
@@ -30,12 +30,13 @@ function mobileCheck() {
     	}
 	else {
 		$('.dropdown').css("display", "none");
+		$('.sidebutton').css("display", "none");
 
 		$('ul').css("display", "block");
   		$('#LogoBox').css("float", "left");
 		$('#SideBar').css("width", "300px");   
 		$('#ContentArea').css("width", "calc(100% - 300px)");
-
+		
 		$('li').css("float", "left"); 
 		$('li a').css("font-size", "2.9vw");
 		$('li').css("display", "inline");
