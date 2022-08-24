@@ -1,4 +1,5 @@
 var limit = 1100;
+var barExpanded = false
 
 $(document).ready(mobileCheck);
 $(window).resize(mobileCheck);
@@ -11,7 +12,12 @@ function mobileCheck() {
 		document.getElementsByTagName('ul')[0].style.display = "none";
 		$('#LogoBox').css("float", "none");
 		$('#ContentArea').css("width", "calc(100% - 50px)");
-		$('#SideBar').css("width", "50px");
+		
+		if(!barExpanded){
+			$('#SideBar').css("width", "50px");
+		}
+		
+
 		$('.dropdown').css("display", "inline-block");
 		
 
@@ -35,4 +41,18 @@ function mobileCheck() {
 		$('li').css("display", "inline");
 		
 	}
+}
+
+
+function expandBar(){
+	barExpanded = !barExpanded;
+	if(barExpanded){
+		$('#SideBar').css("width", "300px");
+		$('.sidebutton').css("margin-left", "280px");   
+	}
+	else{
+		$('#SideBar').css("width", "50px");
+		$('.sidebutton').css("margin-left", "30px");   
+	}
+	
 }
