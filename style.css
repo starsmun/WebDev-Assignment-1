@@ -21,7 +21,36 @@ body {
 }
 
 .PaddedTextArea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
 	padding: 20px;
+	background-color: #5289b5;
+}
+
+.PaddedTextArea::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#textArea_row {
+	float: left;
+	width: 50%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+	padding: 1vh 4vh 2vh 4vh;
+	float: left;
+	color:  #F2E9EA;
+}
+
+
+
+.PaddedTextArea h1 {
+	text-align: center;
+	color: #F2E9EA;
 }
 
 #InnerBody {
@@ -43,9 +72,9 @@ body {
 }
 
 #NavigationBox {
-    	margin: 20px auto;
+	margin: 20px auto;
 	width: 100%;
-    	position: relative;
+	position: relative;
 }
 
 #ContentBox {
@@ -113,7 +142,7 @@ li {
 
 li a {
   	display: block;
-  	color: white;
+  	color: #F2E9EA;
   	text-align: center;
 	font-size: 2.9vw;
 	font-weight: bold;
@@ -125,6 +154,10 @@ li a:hover {
   	background-color: #111;
 	transition: 0.3s;
 	
+}
+
+a {
+	color: #F2E9EA;
 }
 
 .dropbtn {
