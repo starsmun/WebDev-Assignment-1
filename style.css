@@ -25,7 +25,6 @@ body {
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box; 
 	padding: 20px;
-	background-color: #f6f6f6;
 }
 
 .PaddedTextArea::after {
@@ -46,12 +45,13 @@ body {
 
 #offerings_row {
 	float: left;
-	width: 75%;
+	min-width: 400px;
+	width: 50vw;
 	height: 100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box; 
-	padding: 1vh 4vw 1vh 4vw;
+	padding: 1vh 2vw 1vh 2vw;
 }
 
 
@@ -115,7 +115,7 @@ body {
 	transition: 0.5s;
 	float: left;
 	z-index: 5;
-	padding: 1vh 2vw 2vh 2vw;
+	padding: 1vh;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box; 
@@ -229,13 +229,14 @@ li a:hover {
 }
 
 .sidebutton:hover {
-  background-color: #c3d7de;
+  	background-color: #c3d7de;
 }
 
 .image_gallery {
-  float: left;
-  width: 50%;
-  padding: 5px;
+  	float: left;
+  	width: 50%;
+	min-width: 400px;
+  	padding: 5px;
 }
 .image_gallery::after {
 	content: "";

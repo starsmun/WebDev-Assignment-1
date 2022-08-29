@@ -15,11 +15,13 @@ function mobileCheck() {
 
 		if(!barExpanded){
 			$('#SideBar').css("width", "50px");
+			$('#SideBar .PaddedTextArea').css("display", "none");
 		}
 
 		$('.sidebutton').css("display", "block");
+		
 		$('.dropdown').css("display", "inline-block");
-
+		
 
 		$('li').css("float", "none"); 
 		$('li a').css("font-size", "30px");
@@ -32,6 +34,7 @@ function mobileCheck() {
 		$('.sidebutton').css("display", "none");
 		
 		$('#SideBar').css("position", "");
+		$('#SideBar .PaddedTextArea').css("display", "block");
 		$('#ContentArea').css("position", "");
 
 		$('ul').css("display", "block");
@@ -52,6 +55,7 @@ function expandBar(){
 	barExpanded = !barExpanded;
 	if(barExpanded){
 		$('#SideBar').css("position", "absolute");
+		$('#SideBar .PaddedTextArea').css("display", "block");
 		$('#ContentArea').css("position", "absolute");
 		
 		$('#SideBar').css("width", "300px");
@@ -60,6 +64,7 @@ function expandBar(){
 
 	else{
 		$('#SideBar').css("width", "50px");
+		$('#SideBar .PaddedTextArea').css("display", "none");
 		$('.sidebutton').css("margin-left", "30px"); 
 		
 		$('#SideBar').css("position", "");
